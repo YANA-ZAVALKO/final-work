@@ -1,0 +1,529 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Regular.eot");
+  src: url("../fonts/subset-ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Regular.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Regular.woff") format("woff"), url("../fonts/subset-ProximaNova-Regular.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Bold.eot");
+  src: url("../fonts/subset-ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Bold.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Bold.woff") format("woff"), url("../fonts/subset-ProximaNova-Bold.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Light.eot");
+  src: url("../fonts/subset-ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Light.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Light.woff") format("woff"), url("../fonts/subset-ProximaNova-Light.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Semibold.eot");
+  src: url("../fonts/subset-ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Semibold.woff") format("woff"), url("../fonts/subset-ProximaNova-Semibold.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+.top-menu {
+  background-image: url(../images/football.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+  min-width: 320px;
+}
+.top-menu__wrap {
+  background-color: #0a0e34;
+  opacity: 0.9;
+  min-height: 960px;
+}
+.top-menu__logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+.top-menu__logo-image {
+  padding-bottom: 293px;
+}
+.top-menu__logo-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 34px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.top-menu__title {
+  color: #ffffff;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+}
+.top-menu__title_second {
+  text-align: right;
+  z-index: -2;
+}
+.top-menu__title-decoration {
+  max-width: 254px;
+  position: absolute;
+  top: 310px;
+  left: 395px;
+  z-index: -1;
+}
+.top-menu__nav {
+  text-align: right;
+  margin-bottom: 159px;
+}
+.top-menu__nav-link {
+  text-decoration: none;
+  color: #9071ea;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-right: 47px;
+}
+.top-menu__button {
+  display: flex;
+  justify-content: center;
+}
+.top-menu__button-first {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.top-menu__button-first_btn {
+  text-decoration: none;
+  margin-right: 51px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 26px 67px 40px 105px;
+  box-shadow: 0 16px 24px #0a0e34;
+  background-color: #5e42b0;
+  border-radius: 50px;
+  width: 100%;
+}
+.top-menu__button-first_icon {
+  width: 53px;
+  color: #ffffff;
+  position: absolute;
+  left: 43px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+  font-weight: 300;
+}
+.top-menu__button-first_text {
+  margin-left: 104px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.top-menu__button-first_btn-second {
+  padding: 26px 126px 40px 104px;
+  text-align: left;
+}
+
+@media (max-width: 1549px) {
+  .top-menu {
+    width: 100%;
+    background-position: center;
+  }
+  .top-menu__title-decoration {
+    top: 190px;
+    left: 290px;
+  }
+  .top-menu__logo-image {
+    padding-bottom: 170px;
+    margin-left: 20px;
+  }
+  .top-menu__title {
+    margin-left: 89px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-bottom: 33px;
+  }
+  .top-menu__title_second {
+    margin-left: 197px;
+    text-align: left;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    display: block;
+    margin-bottom: 170px;
+    z-index: 1;
+  }
+  .top-menu__nav {
+    text-align: left;
+    margin-left: 40px;
+  }
+  .top-menu__nav-link {
+    margin-right: 60px;
+  }
+  .top-menu__nav-link:last-child {
+    margin: 0;
+  }
+  .top-menu__button-first_btn {
+    margin-right: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .top-menu {
+    width: 100%;
+  }
+  .top-menu__logo-text {
+    opacity: 0;
+  }
+  .top-menu__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0;
+    padding-bottom: 14px;
+    letter-spacing: 1.76px;
+  }
+  .top-menu__title_second {
+    text-align: left;
+    margin: 0;
+    padding-left: 65px;
+    letter-spacing: 0;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .top-menu__title-decoration {
+    width: 50%;
+    top: 210px;
+    left: 90px;
+  }
+  .top-menu__nav-link {
+    flex-direction: column;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1550px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+@media (max-width: 1549px) {
+  .container {
+    width: 100%;
+    padding: 0 26px;
+  }
+}
+
+.sport--reverse {
+  flex-direction: row-reverse;
+}
+.sport__image {
+  width: 50%;
+  position: absolute;
+  margin-top: -66px;
+}
+.sport__wrap-first {
+  background-color: #ffffff;
+  position: relative;
+}
+.sport__description {
+  max-width: 750px;
+  margin-left: 50%;
+  margin-top: 112px;
+}
+.sport__description-title {
+  width: 377px;
+  color: #e7e7e7;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 89px;
+}
+.sport__description-text {
+  font-family: "Proxima Nova", sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.sport__description-text_third {
+  color: #ffffff;
+}
+.sport__description-second {
+  padding-top: 60px;
+  padding-bottom: 57px;
+}
+.sport__description-third {
+  padding-top: 87px;
+  margin-top: 0;
+  padding-bottom: 98px;
+}
+.sport__number {
+  display: flex;
+}
+.sport__number-text {
+  color: #000000;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.sport__number-text::after {
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  margin-top: -5px;
+}
+.sport__number-text_third::after {
+  content: "";
+  background-color: #efefef;
+}
+.sport__number-heading {
+  color: #c1c1c1;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 31px;
+  padding-top: 5px;
+  line-height: 36px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.sport__wrap-second {
+  background-color: #efefef;
+}
+.sport__wrap-third {
+  background-color: #5e42b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.card {
+  display: flex;
+}
+.card__image {
+  width: 50%;
+  object-fit: cover;
+}
+.card__content {
+  width: 50%;
+  max-width: 775px;
+  position: relative;
+  padding: 244px 10px 122px 123px;
+}
+.card__content--reverse {
+  padding: 244px 87px 122px 1px;
+}
+.card__number {
+  width: 168px;
+  height: 155px;
+  background-color: #5e42b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 211px;
+  left: -84px;
+}
+.card__number-text {
+  color: #e7e7e7;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 1.2px;
+}
+.card__number-text::after {
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  margin-right: 4px;
+}
+.card__number--reverse {
+  left: auto;
+  right: -84px;
+}
+.card__title {
+  opacity: 0.4;
+  color: #c1c1c1;
+  font-family: "Proxima Nova";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.card__description {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+  padding-left: 4px;
+  max-width: 329px;
+  position: relative;
+  padding-bottom: 25px;
+  min-height: 169px;
+}
+.card__description::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  position: absolute;
+  left: 4px;
+  bottom: 0;
+}
+.card--reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1549px) {
+  .card {
+    flex-direction: column;
+  }
+  .card__image {
+    width: 100%;
+    height: 584px;
+  }
+  .card__content {
+    width: 100%;
+    max-width: 100%;
+    padding: 74px 30px 63px 30px;
+  }
+  .card__number {
+    width: 116px;
+    height: 116px;
+    left: 33px;
+    top: -80px;
+  }
+  .card__title {
+    margin-bottom: 20px;
+  }
+  .card__description {
+    max-width: 100%;
+    min-height: 0;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .card__image {
+    height: 351px;
+  }
+  .card__number {
+    width: 70px;
+    height: 70px;
+    left: 19px;
+    top: -58px;
+  }
+  .card__number-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .card__number-text::after {
+    height: 4px;
+    margin-right: 2px;
+  }
+  .card__content {
+    padding: 28px 19px 51px 19px;
+  }
+  .card__title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+  .card__description {
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

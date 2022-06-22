@@ -1,0 +1,354 @@
+.top-menu {
+    background-image: url(../images/football.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    min-width: 320px;
+    
+    
+    
+    &__wrap {
+        background-color:  $important-color;
+        opacity: 0.9;
+      
+        min-height: 960px;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 55px;
+       
+    }
+    
+    &__logo-image {
+        padding-bottom: 293px;
+    }
+    &__logo-text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 34px;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+    &__title {
+        color: $text-color;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 100px;
+        text-align: left;
+        text-transform: uppercase;
+        
+        
+        
+
+        &_second {
+            text-align: right;
+            z-index: -2;
+            
+        }
+    }
+    
+    &__title-decoration {
+        max-width: 254px;
+        position: absolute;
+        top: 310px;
+        left: 395px;
+        z-index: -1;
+        
+    }
+
+    &__nav {
+        text-align: right;
+        margin-bottom: 159px;
+    }
+    &__nav-link {
+        text-decoration: none;
+        color: $theme-light-color;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 34px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        margin-right: 47px;
+    }
+    &__button {
+        
+        display: flex;
+        justify-content: center;
+        
+
+        
+       
+      
+        &_footer {
+            margin-bottom: 268px;
+            display: flex;
+            justify-content: center;
+        }
+       
+
+    }
+
+    &__button-first {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        margin-right: 51px;
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding: 20px 67px 15px 105px;
+        box-shadow: 0 16px 24px $important-color;
+        background-color: $theme-color;
+        border-radius: 50px;
+      
+       
+        &_second {
+            padding: 20px 100px 15px 110px;
+            
+        }
+      
+      
+      
+        
+       
+
+        &_btn {
+            text-decoration: none;
+            margin-right: 51px;
+            color: $text-color;
+          
+            text-transform: uppercase;
+            
+            box-shadow: 0 16px 24px $important-color;
+            background-color: $theme-color;
+            border-radius: 50px;
+            width: 100%;
+          
+        
+
+    
+            
+        }
+        &_icon {
+            display: inline-block;
+            vertical-align: top;
+           
+            color: $text-color;
+            position: absolute;
+            left: 43px;
+            top: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 33px;
+            font-weight: 300;
+
+        }
+        &_text {
+            display: inline-block;
+            vertical-align: top;
+            color: $text-color ;
+            font-size: 14px;
+            
+            font-weight: 300;
+            text-transform: uppercase;
+           
+          
+        }
+        &_text-second {
+            display: block;
+            font-weight: 700;
+        }
+       
+    }
+}
+@media (max-width: 1549px) {
+    .top-menu{
+        width: 100%;
+        background-position: center;
+       
+        &__title-decoration{
+            top: 190px;
+            left: 290px;
+        }
+
+        &__logo-image {
+            padding-bottom: 170px;
+            margin-left: 20px;
+        }
+
+        &__title {
+            margin-left: 89px;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 31px;
+            margin-bottom: 33px;
+
+            &_second {
+               margin-left: 197px;
+               text-align: left;
+               font-size: 64px;
+               font-weight: 700;
+               line-height: 70px;
+               display: block;
+               margin-bottom: 170px;
+               z-index: 1;
+            }
+           
+        }
+
+
+        &__button-first {
+           
+            padding: 20px 75px 5px 65px;
+           
+          
+           
+            &_second {
+                padding: 20px 65px 5px 65px;
+                
+                
+            }
+            &_icon {
+                font-size: 25px;
+                left: 30px;
+              
+            }
+            &_text {
+                font-size: 8px;
+                line-height: 16px;
+            
+              
+               
+            }
+        }
+          
+        &__nav {
+            text-align: left;
+            margin-left: 40px;
+            
+        }
+        &__nav-link {
+            margin-right: 60px;
+        }
+        &__nav-link:last-child {
+            margin: 0;
+        }
+        
+        &__button-first {
+
+            &_btn {
+                margin-right: 36px;
+            }
+        }
+
+    }
+}
+@media (max-width: 767px) {
+    .top-menu {
+           
+            width: 100%;
+            
+       
+
+        &__logo-text {
+            opacity: 0;
+            
+        }
+
+        &__title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 34px;
+            margin: 0;
+            padding-bottom: 14px;
+            letter-spacing: 1.76px;
+            
+            
+            &_second {
+                text-align: left;
+                margin: 0;
+                padding-left: 65px;
+                letter-spacing: 0;
+                font-size: 26px;
+                line-height: 34px;
+                
+            }
+        }
+      
+        &__nav-link {
+            margin-right: 5px;
+            text-align:left;
+        }
+
+        &__nav-link:nth-child(4) {
+            margin-right: 55px;
+            margin-left: 35px;
+        }
+        
+        &__title-decoration {
+            width: 50%;
+            top: 210px;
+            left: 90px;
+        }
+        &__nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        &__button {
+            
+   
+        }
+        &__button-first {
+           
+            &_btn {
+                text-decoration: none;
+                margin-right: 5px;
+                color: $text-color;
+              
+                padding: 11px 10px 21px 50px;
+                box-shadow: 0 16px 24px $important-color;
+                background-color: $theme-color;
+                border-radius: 25px;
+                width: 100%;
+                font-size: 8px;
+                line-height: 16px;
+                font-weight: 300;
+                letter-spacing: 0.4px;         
+                
+            }
+            &_btn-second {
+                padding: 10px 48px 22px 54px;
+                text-align: left;
+            }
+            &_icon {
+                width: 25px;
+                color: $text-color;
+                position: absolute;
+                left: 15px;
+                top: -7px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                font-weight: 300;
+    
+            }
+            &_text {
+            
+              
+            }
+        }  
+    }
+}

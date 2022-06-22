@@ -1,0 +1,881 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Regular.eot");
+  src: url("../fonts/subset-ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Regular.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Regular.woff") format("woff"), url("../fonts/subset-ProximaNova-Regular.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Bold.eot");
+  src: url("../fonts/subset-ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Bold.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Bold.woff") format("woff"), url("../fonts/subset-ProximaNova-Bold.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Light.eot");
+  src: url("../fonts/subset-ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Light.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Light.woff") format("woff"), url("../fonts/subset-ProximaNova-Light.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/subset-ProximaNova-Semibold.eot");
+  src: url("../fonts/subset-ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/subset-ProximaNova-Semibold.woff") format("woff"), url("../fonts/subset-ProximaNova-Semibold.ttf") format("truetype"), url("../fonts/subset-ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+.top-menu {
+  background-image: url(../images/football.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+  min-width: 320px;
+}
+.top-menu__wrap {
+  background-color: #0a0e34;
+  opacity: 0.9;
+  min-height: 960px;
+}
+.top-menu__logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+.top-menu__logo-image {
+  padding-bottom: 293px;
+}
+.top-menu__logo-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 34px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.top-menu__title {
+  color: #ffffff;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.top-menu__title_second {
+  text-align: right;
+  z-index: -2;
+}
+.top-menu__title-decoration {
+  max-width: 254px;
+  position: absolute;
+  top: 310px;
+  left: 395px;
+  z-index: -1;
+}
+.top-menu__nav {
+  text-align: right;
+  margin-bottom: 159px;
+}
+.top-menu__nav-link {
+  text-decoration: none;
+  color: #9071ea;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-right: 47px;
+}
+.top-menu__button {
+  display: flex;
+  justify-content: center;
+}
+.top-menu__button_footer {
+  margin-bottom: 268px;
+  display: flex;
+  justify-content: center;
+}
+.top-menu__button-first {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  margin-right: 51px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding: 20px 67px 15px 105px;
+  box-shadow: 0 16px 24px #0a0e34;
+  background-color: #5e42b0;
+  border-radius: 50px;
+}
+.top-menu__button-first_second {
+  padding: 20px 100px 15px 110px;
+}
+.top-menu__button-first_btn {
+  text-decoration: none;
+  margin-right: 51px;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 16px 24px #0a0e34;
+  background-color: #5e42b0;
+  border-radius: 50px;
+  width: 100%;
+}
+.top-menu__button-first_icon {
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  position: absolute;
+  left: 43px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+  font-weight: 300;
+}
+.top-menu__button-first_text {
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.top-menu__button-first_text-second {
+  display: block;
+  font-weight: 700;
+}
+
+@media (max-width: 1549px) {
+  .top-menu {
+    width: 100%;
+    background-position: center;
+  }
+  .top-menu__title-decoration {
+    top: 190px;
+    left: 290px;
+  }
+  .top-menu__logo-image {
+    padding-bottom: 170px;
+    margin-left: 20px;
+  }
+  .top-menu__title {
+    margin-left: 89px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-bottom: 33px;
+  }
+  .top-menu__title_second {
+    margin-left: 197px;
+    text-align: left;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    display: block;
+    margin-bottom: 170px;
+    z-index: 1;
+  }
+  .top-menu__button-first {
+    padding: 20px 75px 5px 65px;
+  }
+  .top-menu__button-first_second {
+    padding: 20px 65px 5px 65px;
+  }
+  .top-menu__button-first_icon {
+    font-size: 25px;
+    left: 30px;
+  }
+  .top-menu__button-first_text {
+    font-size: 8px;
+    line-height: 16px;
+  }
+  .top-menu__nav {
+    text-align: left;
+    margin-left: 40px;
+  }
+  .top-menu__nav-link {
+    margin-right: 60px;
+  }
+  .top-menu__nav-link:last-child {
+    margin: 0;
+  }
+  .top-menu__button-first_btn {
+    margin-right: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .top-menu {
+    width: 100%;
+  }
+  .top-menu__logo-text {
+    opacity: 0;
+  }
+  .top-menu__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0;
+    padding-bottom: 14px;
+    letter-spacing: 1.76px;
+  }
+  .top-menu__title_second {
+    text-align: left;
+    margin: 0;
+    padding-left: 65px;
+    letter-spacing: 0;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .top-menu__nav-link {
+    margin-right: 5px;
+    text-align: left;
+  }
+  .top-menu__nav-link:nth-child(4) {
+    margin-right: 55px;
+    margin-left: 35px;
+  }
+  .top-menu__title-decoration {
+    width: 50%;
+    top: 210px;
+    left: 90px;
+  }
+  .top-menu__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .top-menu__button-first_btn {
+    text-decoration: none;
+    margin-right: 5px;
+    color: #ffffff;
+    padding: 11px 10px 21px 50px;
+    box-shadow: 0 16px 24px #0a0e34;
+    background-color: #5e42b0;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 8px;
+    line-height: 16px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+  }
+  .top-menu__button-first_btn-second {
+    padding: 10px 48px 22px 54px;
+    text-align: left;
+  }
+  .top-menu__button-first_icon {
+    width: 25px;
+    color: #ffffff;
+    position: absolute;
+    left: 15px;
+    top: -7px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 300;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1550px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+.container--reverse {
+  width: 100%;
+  max-width: 1550px;
+  padding: 0 10px;
+  margin: auto 0;
+}
+
+@media (max-width: 1549px) {
+  .container {
+    width: 100%;
+    padding: 0 26px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.sport__container {
+  width: 100%;
+  max-width: 1550px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.sport__container--reverse {
+  width: 100%;
+  max-width: 1550px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+.sport__image {
+  width: 45%;
+  max-width: 725px;
+  position: absolute;
+  margin-top: -50px;
+  object-fit: cover;
+  background: url(../images/line.png) no-repeat;
+  background-position: 11px 25px;
+}
+.sport__image--reverse {
+  width: 65%;
+  max-width: 991px;
+  margin-left: 30%;
+  margin-top: -120px;
+  object-fit: cover;
+  position: absolute;
+  padding-left: 0;
+  background: url(../images/line-basketball.png) no-repeat;
+  background-position: 200px 50px;
+}
+.sport__wrap-first {
+  background-color: #ffffff;
+  position: relative;
+}
+.sport__description {
+  max-width: 750px;
+  margin-left: 50%;
+  margin-top: 112px;
+  position: relative;
+}
+.sport__description--reverse {
+  max-width: 750px;
+  margin-left: 0;
+  margin-top: 90px;
+}
+.sport__description-title {
+  width: 377px;
+  color: #e7e7e7;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 89px;
+}
+.sport__description-text {
+  font-family: "Proxima Nova", sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.sport__description-text_third {
+  color: #ffffff;
+}
+.sport__description-second {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.sport__description-second--reverse {
+  padding-top: 60px;
+  padding-bottom: 57px;
+  margin-left: 0;
+}
+.sport__description-third {
+  padding-top: 75px;
+  margin-top: 0;
+  padding-bottom: 72px;
+}
+.sport__description-third--reverse {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 0;
+  margin-top: 0;
+}
+.sport__number {
+  display: flex;
+}
+.sport__number-text {
+  color: #000000;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.sport__number-text::after {
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  margin-top: -5px;
+}
+.sport__number-text_third::after {
+  content: "";
+  background-color: #efefef;
+}
+.sport__number-text_third--reverse {
+  color: #9071ea;
+}
+.sport__number-text_third--reverse::after {
+  content: "";
+  background-color: #ffffff;
+}
+.sport__number-heading {
+  color: #c1c1c1;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 31px;
+  padding-top: 5px;
+  line-height: 36px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.sport__wrap-second {
+  background-color: #efefef;
+}
+.sport__wrap-third {
+  background-color: #5e42b0;
+}
+.sport__wrap-third--reverse {
+  background-color: #0a0e34;
+}
+
+@media (max-width: 1549px) {
+  .sport {
+    position: relative;
+    overflow: hidden;
+  }
+  .sport__container--reverse {
+    padding-left: 40px;
+  }
+  .sport__image {
+    width: 75%;
+    margin-left: -25%;
+    margin-top: 0;
+    background: url(../images/line.png) no-repeat;
+    background-position: -100px 10px;
+  }
+  .sport__image--reverse {
+    width: 105%;
+    margin-left: 35%;
+    margin-top: -90px;
+    background: url(../images/line-basketball.png) no-repeat;
+    background-position: 185px -60px;
+  }
+  .sport__description {
+    max-width: 65%;
+    margin-left: 42%;
+    margin-top: 112px;
+  }
+  .sport__description-second {
+    margin-top: 60px;
+  }
+  .sport__description-second--reverse {
+    margin-left: 0;
+  }
+  .sport__description-third {
+    padding-top: 30px;
+    margin-top: 0;
+  }
+  .sport__description-third--reverse {
+    margin-left: 0;
+    margin-top: 0px;
+    padding-top: 52px;
+  }
+  .sport__description-title {
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  .sport__description--reverse {
+    margin-left: 0;
+    max-width: 50%;
+    margin-top: 10px;
+    margin-bottom: -100px;
+  }
+}
+.footer-menu {
+  background-image: url(../images/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+  min-width: 320px;
+}
+.footer-menu__wrap {
+  background-color: #0a0e34;
+  opacity: 0.9;
+  min-height: 960px;
+}
+.footer-menu__button-second {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  top: 295px;
+  margin-right: 30px;
+}
+.footer-menu__button-second_btn {
+  text-decoration: none;
+  width: 100%;
+  height: 137px;
+  padding: 53px 60px;
+  box-shadow: 0 16px 24px #0a0e34;
+  background-color: #5e42b0;
+  border-radius: 15%;
+}
+.footer-menu__button-second_icon {
+  width: 35px;
+  color: #ffffff;
+  position: absolute;
+  left: 38px;
+  top: -20px;
+  height: 100%;
+  font-size: 60px;
+  font-weight: 300;
+}
+.footer-menu__download {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.footer-menu__download-description_title {
+  color: #ffffff;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 233px;
+}
+.footer-menu__download-description_text {
+  color: #9071ea;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 155px;
+  margin-top: 13px;
+}
+.footer-menu__containers {
+  width: 100%;
+  max-width: 1810px;
+  padding: 0 0 60px 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  margin: 0 auto;
+}
+.footer-menu__socials_icon {
+  font-size: 27px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 35px;
+}
+.footer-menu__nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  border-right: 1px solid #ffffff;
+  padding: 0 10px;
+  letter-spacing: 1px;
+}
+.footer-menu__nav-item:last-child {
+  border-right: none;
+}
+.footer-menu__button-first {
+  position: relative;
+}
+.footer-menu__title-decoration_first {
+  max-width: 138px;
+  position: absolute;
+  top: -320px;
+  left: 75px;
+  z-index: -2;
+}
+.footer-menu__title-decoration_second {
+  max-width: 275px;
+  position: absolute;
+  top: -390px;
+  left: 420px;
+  z-index: -1;
+}
+
+@media (max-width: 1549px) {
+  .footer-menu__download {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-menu__download-description_title {
+    padding-top: 0;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 4.85px;
+  }
+  .footer-menu__download-description_text {
+    text-align: center;
+    font-size: 36px;
+    line-height: 60px;
+  }
+  .footer-menu__button-second {
+    margin: 180px auto;
+    top: 38px;
+  }
+  .footer-menu__button-first {
+    position: relative;
+  }
+  .footer-menu__title-decoration_first {
+    position: absolute;
+    top: -320px;
+    left: -10px;
+  }
+  .footer-menu__title-decoration_second {
+    position: absolute;
+    top: -390px;
+    left: 310px;
+  }
+  .footer-menu__containers {
+    display: block;
+    padding-top: 0;
+  }
+  .footer-menu__logo {
+    opacity: 0;
+  }
+  .footer-menu__nav-item {
+    opacity: 0;
+  }
+  .footer-menu__socials {
+    text-align: center;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.card {
+  display: flex;
+}
+.card__image {
+  width: 50%;
+  object-fit: cover;
+}
+.card__content {
+  width: 50%;
+  max-width: 775px;
+  position: relative;
+  padding: 244px 10px 122px 123px;
+}
+.card__content--reverse {
+  padding: 244px 87px 122px 1px;
+}
+.card__number {
+  width: 168px;
+  height: 155px;
+  background-color: #5e42b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 211px;
+  left: -84px;
+}
+.card__number-text {
+  color: #e7e7e7;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 1.2px;
+}
+.card__number-text::after {
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  margin-right: 4px;
+}
+.card__number--reverse {
+  left: auto;
+  right: -84px;
+}
+.card__title {
+  opacity: 0.4;
+  color: #c1c1c1;
+  font-family: "Proxima Nova";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.card__description {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+  padding-left: 4px;
+  max-width: 329px;
+  position: relative;
+  padding-bottom: 25px;
+  min-height: 169px;
+}
+.card__description::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  position: absolute;
+  left: 4px;
+  bottom: 0;
+}
+.card--reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1549px) {
+  .card {
+    flex-direction: column;
+  }
+  .card__image {
+    width: 100%;
+    height: 584px;
+  }
+  .card__content {
+    width: 100%;
+    max-width: 100%;
+    padding: 74px 30px 63px 30px;
+  }
+  .card__number {
+    width: 116px;
+    height: 116px;
+    left: 33px;
+    top: -80px;
+  }
+  .card__title {
+    margin-bottom: 20px;
+  }
+  .card__description {
+    max-width: 100%;
+    min-height: 0;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .card__image {
+    height: 351px;
+  }
+  .card__number {
+    width: 70px;
+    height: 70px;
+    left: 19px;
+    top: -58px;
+  }
+  .card__number-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .card__number-text::after {
+    height: 4px;
+    margin-right: 2px;
+  }
+  .card__content {
+    padding: 28px 19px 51px 19px;
+  }
+  .card__title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+  .card__description {
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,282 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+.sport {
+    
+
+    &__container {
+        width: 100%;
+        max-width: 1550px;
+        padding: 0 10px;
+        margin: 0 auto;
+
+        &--reverse {
+            width: 100%;
+            max-width: 1550px;
+            padding: 0 10px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+    }
+
+    &__image {
+        width: 45%;
+        max-width: 725px;
+        position: absolute;
+        
+        margin-top: -50px;
+        object-fit: cover;
+        background: url(../images/line.png) no-repeat;
+        background-position: 11px 25px ;
+      
+
+        &--reverse {
+            width: 65%;
+            max-width: 991px;
+            margin-left: 30%;
+            margin-top: -120px;
+            object-fit: cover;
+            position: absolute;
+            padding-left: 0;
+            background: url(../images/line-basketball.png) no-repeat;
+            background-position: 200px 50px ;
+            
+            
+            
+        }
+        
+    }
+    
+    &__wrap-first {
+        background-color: $text-color ;
+        position: relative;
+        
+        
+
+    }
+
+    &__description {
+        max-width: 750px;
+        margin-left: 50%;
+        margin-top: 112px;
+        position: relative;
+        
+        
+        &--reverse {
+            max-width: 750px;
+            margin-left: 0;
+            
+            margin-top: 90px;
+           
+        
+        }
+
+        &-title {     
+            width: 377px;
+            color: $title-color;
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 90px;
+            text-align: left;
+            text-transform: uppercase;
+            margin-bottom: 89px;
+                
+        }
+        &-text {
+            
+            font-family: "Proxima Nova",sans-serif;
+            color: $number-color;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 1px;
+           
+            &_third {
+                color: $text-color;
+            }
+            
+        }
+        &-second {
+           padding-top: 40px;
+           padding-bottom: 40px;
+
+           &--reverse {
+            padding-top: 60px;
+            padding-bottom: 57px;
+            margin-left: 0;
+            }
+        }
+        &-third {
+            padding-top: 75px;
+            margin-top: 0;
+            padding-bottom: 72px;
+
+            &--reverse {
+                padding-top: 80px;
+                padding-bottom: 80px;
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+
+    } 
+    &__number {
+            display: flex;
+            
+        &-text {
+        
+            color: $number-color;
+            font-family: "Proxima Nova",sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 34px;
+
+
+            &::after {
+                content: '';
+                display: block;
+                height: 5px;
+                border-radius: 2px;
+                background-color: $theme-color;
+                margin-top: -5px;
+                
+            }
+            &_third {
+                &::after {
+                    content:'';
+                    background-color: $secondary-theme-color;
+                }
+                &--reverse {
+                    color:$theme-light-color;
+                    &::after {
+                        content:'';
+                        background-color: $text-color;
+                    }
+                }
+            }
+        } 
+
+        &-heading {
+            color: $secondary-color;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 31px;
+            padding-top: 5px;
+            line-height: 36px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            
+        }
+    }
+    &__wrap-second {
+        background-color:$secondary-theme-color;
+    }
+    
+    &__wrap-third {
+        background-color:$theme-color;
+
+        &--reverse {
+            background-color:$important-color;
+        }
+    }
+
+}
+
+@media (max-width: 1549px) {
+
+    .sport {
+        position: relative;
+        overflow: hidden;
+                    
+        &__container {
+           
+            &--reverse {
+                padding-left: 40px;
+                
+          
+            }
+        }
+
+        
+        &__image {
+            width: 75%;
+            margin-left: -25%;
+            margin-top: 0;
+            background: url(../images/line.png) no-repeat;
+            background-position:-100px 10px ;
+            
+
+            &--reverse {
+                width: 105%;
+                margin-left: 35%;
+                margin-top: -90px;    
+                background: url(../images/line-basketball.png) no-repeat;
+                background-position: 185px  -60px ;         
+                
+            }
+        }
+
+        &__description {
+            max-width: 65%;
+            margin-left: 42%;
+
+            margin-top: 112px;
+
+           
+
+            &-second {
+                margin-top: 60px;
+                
+                &--reverse {
+                    margin-left:0;
+                    
+                }
+            }
+            
+
+            &-third {
+                padding-top: 30px;
+                margin-top: 0;
+
+                &--reverse {
+                    margin-left:0; 
+                    margin-top: 0px;
+                    padding-top: 52px;
+                    
+                }
+            }
+
+            &-title { 
+                margin-bottom: 40px;
+                margin-top: 80px;
+
+                
+                
+            }
+            
+            &--reverse {
+                margin-left:0;
+                max-width: 50%;
+                margin-top: 10px;
+                margin-bottom: -100px;
+               
+            
+            }
+        }
+        
+       
+        
+            
+    }
+    
+}

@@ -1,0 +1,25 @@
+
+.container {
+  width: 100%;
+  max-width: 1550px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+
+  &--reverse {
+    width: 100%;
+    max-width: 1550px;
+    padding: 0 10px;
+    margin: auto 0;
+  }
+} 
+
+@media (max-width: 1549px) {
+  .container {
+    width: 100%;
+    padding: 0 26px;
+
+   
+  }
+
+}

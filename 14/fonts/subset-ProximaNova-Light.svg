@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Mon Dec 28 22:14:26 2020
+ By Aleksey,,,
+Copyright (c) Mark Simonson, 2005. All rights reserved.
+</metadata>
+<defs>
+<font id="ProximaNova-Light" horiz-adv-x="1058" >
+  <font-face 
+    font-family="Proxima Nova Lt"
+    font-weight="300"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="2 0 5 6 3 0 0 2 0 4"
+    ascent="1618"
+    descent="-430"
+    bbox="170 -184 2171 1540"
+    underline-thickness="40"
+    underline-position="-312"
+    unicode-range="U+0020-2116"
+  />
+<missing-glyph 
+d="M889 -184h-719v1724h719v-1724zM823 -123v1602h-590v-1602h590z" />
+    <glyph glyph-name=".notdef" 
+d="M889 -184h-719v1724h719v-1724zM823 -123v1602h-590v-1602h590z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="682" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="530" 
+ />
+    <glyph glyph-name="afii61352" unicode="&#x2116;" horiz-adv-x="2260" 
+d="M1262 0h-115l-860 1174v-1174h-117v1366h119l856 -1157v1157h117v-1366zM1845 717q-143 0 -233 97.5t-90 240.5q0 144 89.5 241t233.5 97q146 0 236 -97t90 -241q0 -143 -90 -240.5t-236 -97.5zM1845 793q109 0 172.5 75t63.5 187q0 111 -63.5 185.5t-172.5 74.5
+q-107 0 -169 -74.5t-62 -185.5q0 -112 62 -187t169 -75z" />
+  </font>
+</defs></svg>
